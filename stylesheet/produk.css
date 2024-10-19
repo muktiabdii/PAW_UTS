@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Code Next Book';
+    src: url('font/CodeNext-Trial-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Code Next Book', sans-serif;
+    background-color: #003044; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #002431;
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+}
+
+.tambah-produk {
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Mengatur konten agar terletak di tengah secara horizontal */
+    margin-bottom: 20px; /* Margin atas dan bawah untuk memberi jarak */
+    margin-top: 20px;
+}
+
+.tambah-produk button {
+    width: 180px;
+    padding: 10px; /* Padding di dalam tombol */
+    background-color: #05df75; /* Warna hijau */
+    border: none; /* Tanpa batas */
+    border-radius: 15px; /* Sudut bulat */
+    color: white; /* Warna teks putih */
+    font-size: 18px; /* Ukuran font */
+    cursor: pointer; /* Tangan ketika hover */
+    margin-bottom: 10px; /* Jarak bawah untuk tombol */
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+.tambah-produk button:hover {
+    background-color: #4cae4c; /* Warna hijau lebih gelap saat hover */
+}
+
+
+.produk-container {
+    display: flex;
+    flex-wrap: wrap; /* Membiarkan item melipat jika ruang tidak cukup */
+    justify-content: space-between; /* Menyebarkan item secara merata */
+    padding: 20px;
+    color: white;
+}
+
+.produk-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Latar belakang transparan */
+    border-radius: 15px; /* Sudut bulat */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Bayangan lebih gelap */
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 30px;
+    width: calc(20% - 20px); /* Set width untuk lima kolom, dikurangi margin */
+    box-sizing: border-box; /* Termasuk padding dalam lebar total */
+}
+
+.produk-item img {
+    width: 100%; /* Gambar responsif */
+    height: 300px; /* Menjaga rasio gambar */
+    border-radius: 5px;
+}
+
+
+
+.aksi-produk {
+    margin-top: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #05df75;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #4cae4c;  
+}
+
+.logout-container {
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Memusatkan konten secara horizontal */
+    margin-top: 20px; /* Jarak atas untuk memberi ruang */
+}
+
+.logout-container button {
+    padding: 10px 20px; /* Menambah padding untuk memperbesar tombol */
+    font-size: 18px; /* Ukuran font lebih besar */
+    background-color: #05df75; /* Warna tombol */
+    border: none; /* Tanpa batas */
+    border-radius: 15px; /* Sudut bulat */
+    color: white; /* Warna teks putih */
+    cursor: pointer; /* Tangan ketika hover */
+    margin-top: 10px; /* Jarak atas untuk memberi ruang */
+    margin-bottom: 30px;
+}
+
+.logout-container button:hover {
+    background-color: #4cae4c; /* Warna lebih gelap saat hover */
+}
+
+
+footer {
+    text-align: center;
+    background-color: #002431;
+    padding: 5px;
+    color: white;
+}
