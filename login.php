@@ -2,6 +2,11 @@
     session_start();
     include 'db.php';
 
+    if (isset($_SESSION['username'])) {
+        header('Location: index.php');
+        exit;
+    }
+
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Mengambil dan membersihkan input
         $username = trim($_POST['username']);
